@@ -1,0 +1,61 @@
+body {
+  background-image: url(https://media-gadventures.global.ssl.fastly.net/media-server/dynamic/blogs/posts/daniels/2015/03/Untitled-61.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid {
+  display: grid(2, 4);
+}
+
+.wgs {
+  display: inline-block;
+  position: relative;
+  height: 241px ;
+  width: 320px ;
+  overflow: hidden;
+}
+
+.mole-head {
+  position: absolute;
+  right: 54.5px;
+  left: 77.5px;
+  height: 188px;
+  width: 188px;
+  transition: margin-top 0.25s;
+}
+
+.mole-head--hidden {
+  margin-top: 241px;
+}
+
+.mole-hill {
+  position: absolute;
+  height: 110px ;
+  width: 320px ;
+  top: 131px ;
+}
+
+.sb {
+  background-color: rgb(198, 100, 237);
+  border-bottom: 1px solid #645DED;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  color: white;
+  display: flex;
+  font-size: 30px;
+  margin-bottom: 50px;
+  padding: 10px 20px;
+} */
+
+.sb__mole-counter {
+  flex: 1 0 0;
+  text-align: right;
+} */
+
+.sb__score-holder {
+  flex: 1 0 0;
+}
+
+.sb__game-over--hidden {
+  display: none;
+}

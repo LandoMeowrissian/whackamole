@@ -4,6 +4,14 @@ body {
   background-size: cover;
 }
 
+.sb {
+  justify-content: space-around;
+}
+
+.sb__score-holder {
+  
+}
+
 .grid {
   display: grid(2, 4);
 }
@@ -37,11 +45,12 @@ body {
 }
 
 .sb {
-  background-color: rgb(198, 100, 237);
+  background-color: rgb(237, 100, 230);
   border-bottom: 1px solid #645DED;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  color: white;
+  color: rgb(13, 12, 12);
   display: flex;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: 30px;
   margin-bottom: 50px;
   padding: 10px 20px;
@@ -58,4 +67,5 @@ body {
 
 .sb__game-over--hidden {
   display: none;
+  
 }

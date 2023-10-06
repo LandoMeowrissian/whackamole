@@ -1,6 +1,6 @@
 let score = 0;
-let molesLeft = 30;
-let popupLength = 3000;
+let molesLeft = 100;
+let popupLength = 1500;
 let hideTimeout;
 let clickable = false;
 
@@ -28,6 +28,54 @@ function popUpRandomMole() {
   hideTimeout = setTimeout(() => hideMole(moleHead), popupLength);
 }
 
+// function popUpRandomMole() {
+//   if (molesLeft <= 0) {
+//     document.querySelector('.sb__game-over').classList.remove('sb__game-over--hidden');
+//     return;
+//   }
+
+//   const moleHeads = document.querySelectorAll('.mole-head');
+//   moleHeads.forEach(moleHead => moleHead.classList.add('mole-head--hidden'));
+
+
+//   if (moleHeads.length === 0) {
+//     return;
+//   }
+//   const moleIndex = Math.floor(Math.random() * (0, 7));
+//   const moleHead = moleHeads[moleIndex];
+//   moleHead.classList.remove('mole-head--hidden', 'mole-head--whacked');
+
+//   clickable = true;
+//   molesLeft -= 1;
+//   document.querySelector('.sb__moles').innerHTML = molesLeft;
+
+//   hideTimeout = setTimeout(() => hideMole(moleHead), popupLength);
+// }
+
+// function popUpRandomMole() {
+//   if (molesLeft <= 0) {
+//     document.querySelector('.sb__game-over').classList.remove('sb__game-over--hidden');
+//     return;
+//   }
+
+//   const moleHeads = document.querySelectorAll('.mole-head');
+//   moleHeads.forEach(moleHead => moleHead.classList.add('mole-head--hidden'));
+
+
+//   if (moleHeads.length === 0) {
+//     return;
+//   }
+//   const moleIndex = Math.floor(Math.random() * (0, 7));
+//   const moleHead = moleHeads[moleIndex];
+//   moleHead.classList.remove('mole-head--hidden', 'mole-head--whacked');
+
+//   clickable = true;
+//   molesLeft -= 1;
+//   document.querySelector('.sb__moles').innerHTML = molesLeft;
+
+//   hideTimeout = setTimeout(() => hideMole(moleHead), popupLength);
+// }
+
 function hideMole(mole) {
   clickable = false;
   mole.classList.add('mole-head--hidden');
@@ -36,7 +84,7 @@ function hideMole(mole) {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  setTimeout(popUpRandomMole, 0);
+  setTimeout(popUpRandomMole, 100);
 
   const moleHeads = document.querySelectorAll('.mole-head');
   for (let moleHead of moleHeads) {
@@ -67,6 +115,6 @@ window.addEventListener('DOMContentLoaded', () => {
 //     for (let moleHead of moleHeads) {
 //       moleHead.classList.toggle('mole-head--hidden');
 //     }
-//   }, 1000);
+//   }, 1500);
 
 // });
